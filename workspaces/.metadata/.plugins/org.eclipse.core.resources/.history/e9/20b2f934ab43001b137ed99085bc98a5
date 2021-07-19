@@ -1,0 +1,16 @@
+package com.ecommerce.shopping.oauth2.model;
+
+
+
+
+public class User {
+
+	
+	private int userinfoid;
+	private String id;
+	private String email;
+	private String imageUrl;
+	private String name;
+	
+	
+}

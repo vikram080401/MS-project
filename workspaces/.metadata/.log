@@ -1,0 +1,1204 @@
+!SESSION 2020-12-24 00:13:19.677 -----------------------------------------------
+eclipse.buildId=4.8.1.202010230733
+java.version=15
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file I:\FinalProject\workspaces\.metadata\.bak_2.log
+Created Time: 2020-12-24 00:35:54.293
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.310
+!MESSAGE buffering callback sts4.classpath.oYhJMTRy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.323
+!MESSAGE buffering callback sts4.classpath.PhNrmqcM GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.334
+!MESSAGE buffering callback sts4.classpath.LuBIgsfD GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.342
+!MESSAGE buffering callback sts4.classpath.hxAxvKTW GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.352
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.362
+!MESSAGE buffering callback sts4.classpath.KKEVEmGg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.373
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.384
+!MESSAGE buffering callback sts4.classpath.TDNPfMxH GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.392
+!MESSAGE buffering callback sts4.classpath.TRLzkUgo GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.402
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.411
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.419
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.449
+!MESSAGE buffering callback sts4.classpath.SKEpWrBO GoodsWebApp true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.458
+!MESSAGE buffering callback sts4.classpath.eaenOvro GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.468
+!MESSAGE buffering callback sts4.classpath.zegYNHab GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.476
+!MESSAGE buffering callback sts4.classpath.MnbFUyux GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.487
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.495
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.504
+!MESSAGE buffering callback sts4.classpath.NvluXvQZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.513
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.523
+!MESSAGE buffering callback sts4.classpath.daLYWMJV GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.532
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.543
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.552
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.560
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.571
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.580
+!MESSAGE buffering callback sts4.classpath.sUCZcnEG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.589
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.598
+!MESSAGE buffering callback sts4.classpath.NGkBkWTR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.607
+!MESSAGE buffering callback sts4.classpath.CMIpCVIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.617
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.625
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.634
+!MESSAGE buffering callback sts4.classpath.VPInyBYS GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.643
+!MESSAGE buffering callback sts4.classpath.jNCxZqIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.652
+!MESSAGE buffering callback sts4.classpath.mdiHrBcJ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.661
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.669
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.678
+!MESSAGE buffering callback sts4.classpath.CGBGEhEE GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.687
+!MESSAGE buffering callback sts4.classpath.VGnirnDg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.696
+!MESSAGE buffering callback sts4.classpath.GEVUwFKx GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.705
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.714
+!MESSAGE buffering callback sts4.classpath.ZoFRrDYd GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.722
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.732
+!MESSAGE buffering callback sts4.classpath.kpPWzZgR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:54.741
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.750
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.758
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.767
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.776
+!MESSAGE buffering callback sts4.classpath.yVDSryms GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.784
+!MESSAGE buffering callback sts4.classpath.XkuMxLLg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:54.794
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.803
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.811
+!MESSAGE buffering callback sts4.classpath.fYdxuESC GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.820
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.828
+!MESSAGE buffering callback sts4.classpath.pVahxrFf GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.838
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.847
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.856
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.866
+!MESSAGE buffering callback sts4.classpath.USMBYUSG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.874
+!MESSAGE buffering callback sts4.classpath.DAbPgsQy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.883
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.893
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.902
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.911
+!MESSAGE buffering callback sts4.classpath.wlllNDvi GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.921
+!MESSAGE buffering callback sts4.classpath.VrRypENP GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.932
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.940
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.950
+!MESSAGE buffering callback sts4.classpath.BUpzbFaZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.959
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.969
+!MESSAGE buffering callback sts4.classpath.fHtTOiks GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.978
+!MESSAGE buffering callback sts4.classpath.oYhJMTRy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.988
+!MESSAGE buffering callback sts4.classpath.PhNrmqcM GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:54.998
+!MESSAGE buffering callback sts4.classpath.LuBIgsfD GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.007
+!MESSAGE buffering callback sts4.classpath.hxAxvKTW GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.017
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.026
+!MESSAGE buffering callback sts4.classpath.KKEVEmGg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.037
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.045
+!MESSAGE buffering callback sts4.classpath.TDNPfMxH GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.055
+!MESSAGE buffering callback sts4.classpath.TRLzkUgo GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.064
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.073
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.082
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.092
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.102
+!MESSAGE buffering callback sts4.classpath.eaenOvro GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.111
+!MESSAGE buffering callback sts4.classpath.zegYNHab GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.120
+!MESSAGE buffering callback sts4.classpath.MnbFUyux GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.128
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.138
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.147
+!MESSAGE buffering callback sts4.classpath.NvluXvQZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.155
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.164
+!MESSAGE buffering callback sts4.classpath.daLYWMJV GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.174
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.183
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.192
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.200
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.210
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.219
+!MESSAGE buffering callback sts4.classpath.sUCZcnEG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.227
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.237
+!MESSAGE buffering callback sts4.classpath.NGkBkWTR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.247
+!MESSAGE buffering callback sts4.classpath.CMIpCVIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.255
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.265
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.275
+!MESSAGE buffering callback sts4.classpath.VPInyBYS GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.284
+!MESSAGE buffering callback sts4.classpath.jNCxZqIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.293
+!MESSAGE buffering callback sts4.classpath.mdiHrBcJ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.302
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.312
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.322
+!MESSAGE buffering callback sts4.classpath.CGBGEhEE GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.332
+!MESSAGE buffering callback sts4.classpath.VGnirnDg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.340
+!MESSAGE buffering callback sts4.classpath.GEVUwFKx GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.349
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.357
+!MESSAGE buffering callback sts4.classpath.ZoFRrDYd GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.367
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.376
+!MESSAGE buffering callback sts4.classpath.kpPWzZgR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:55.384
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.395
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.403
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.412
+!MESSAGE buffering callback sts4.classpath.zATykGMb GoodsWebApp true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.421
+!MESSAGE buffering callback sts4.classpath.yVDSryms GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.429
+!MESSAGE buffering callback sts4.classpath.XkuMxLLg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:55.439
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.448
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.457
+!MESSAGE buffering callback sts4.classpath.fYdxuESC GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.465
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.475
+!MESSAGE buffering callback sts4.classpath.pVahxrFf GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.484
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.492
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.501
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.510
+!MESSAGE buffering callback sts4.classpath.USMBYUSG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.519
+!MESSAGE buffering callback sts4.classpath.DAbPgsQy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.527
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.536
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.545
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.554
+!MESSAGE buffering callback sts4.classpath.wlllNDvi GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.563
+!MESSAGE buffering callback sts4.classpath.VrRypENP GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.572
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.581
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.590
+!MESSAGE buffering callback sts4.classpath.BUpzbFaZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.600
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.608
+!MESSAGE buffering callback sts4.classpath.fHtTOiks GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.617
+!MESSAGE buffering callback sts4.classpath.oYhJMTRy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.627
+!MESSAGE buffering callback sts4.classpath.PhNrmqcM GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.638
+!MESSAGE buffering callback sts4.classpath.LuBIgsfD GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.647
+!MESSAGE buffering callback sts4.classpath.hxAxvKTW GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.656
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.666
+!MESSAGE buffering callback sts4.classpath.KKEVEmGg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.675
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.684
+!MESSAGE buffering callback sts4.classpath.TDNPfMxH GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.694
+!MESSAGE buffering callback sts4.classpath.TRLzkUgo GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.703
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.712
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.721
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.730
+!MESSAGE buffering callback sts4.classpath.SKEpWrBO GoodsWebApp true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.739
+!MESSAGE buffering callback sts4.classpath.eaenOvro GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.748
+!MESSAGE buffering callback sts4.classpath.zegYNHab GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.756
+!MESSAGE buffering callback sts4.classpath.MnbFUyux GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.764
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.773
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.782
+!MESSAGE buffering callback sts4.classpath.NvluXvQZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.791
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.800
+!MESSAGE buffering callback sts4.classpath.daLYWMJV GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.809
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.818
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.826
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.835
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.843
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.852
+!MESSAGE buffering callback sts4.classpath.sUCZcnEG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.862
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.870
+!MESSAGE buffering callback sts4.classpath.NGkBkWTR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.879
+!MESSAGE buffering callback sts4.classpath.CMIpCVIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.888
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.897
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.905
+!MESSAGE buffering callback sts4.classpath.VPInyBYS GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.914
+!MESSAGE buffering callback sts4.classpath.jNCxZqIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.922
+!MESSAGE buffering callback sts4.classpath.mdiHrBcJ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.931
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.942
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.951
+!MESSAGE buffering callback sts4.classpath.CGBGEhEE GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.960
+!MESSAGE buffering callback sts4.classpath.VGnirnDg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.969
+!MESSAGE buffering callback sts4.classpath.GEVUwFKx GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.977
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.987
+!MESSAGE buffering callback sts4.classpath.ZoFRrDYd GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:55.995
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.003
+!MESSAGE buffering callback sts4.classpath.kpPWzZgR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:56.023
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.037
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.052
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.074
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.087
+!MESSAGE buffering callback sts4.classpath.yVDSryms GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.097
+!MESSAGE buffering callback sts4.classpath.XkuMxLLg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:56.109
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.118
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.127
+!MESSAGE buffering callback sts4.classpath.fYdxuESC GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.136
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.145
+!MESSAGE buffering callback sts4.classpath.pVahxrFf GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.155
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.164
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.173
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.182
+!MESSAGE buffering callback sts4.classpath.USMBYUSG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.192
+!MESSAGE buffering callback sts4.classpath.DAbPgsQy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.202
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.211
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.221
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.229
+!MESSAGE buffering callback sts4.classpath.wlllNDvi GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.239
+!MESSAGE buffering callback sts4.classpath.VrRypENP GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.247
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.256
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.265
+!MESSAGE buffering callback sts4.classpath.BUpzbFaZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.274
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.282
+!MESSAGE buffering callback sts4.classpath.fHtTOiks GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.290
+!MESSAGE buffering callback sts4.classpath.oYhJMTRy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.299
+!MESSAGE buffering callback sts4.classpath.PhNrmqcM GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.307
+!MESSAGE buffering callback sts4.classpath.LuBIgsfD GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.316
+!MESSAGE buffering callback sts4.classpath.hxAxvKTW GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.324
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.332
+!MESSAGE buffering callback sts4.classpath.KKEVEmGg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.341
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.350
+!MESSAGE buffering callback sts4.classpath.TDNPfMxH GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.358
+!MESSAGE buffering callback sts4.classpath.TRLzkUgo GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.366
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.375
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.383
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.392
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.401
+!MESSAGE buffering callback sts4.classpath.eaenOvro GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.409
+!MESSAGE buffering callback sts4.classpath.zegYNHab GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.418
+!MESSAGE buffering callback sts4.classpath.MnbFUyux GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.427
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.436
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.445
+!MESSAGE buffering callback sts4.classpath.NvluXvQZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.454
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.465
+!MESSAGE buffering callback sts4.classpath.daLYWMJV GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.475
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.486
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.494
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.504
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.512
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.521
+!MESSAGE buffering callback sts4.classpath.sUCZcnEG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.530
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.539
+!MESSAGE buffering callback sts4.classpath.NGkBkWTR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.549
+!MESSAGE buffering callback sts4.classpath.CMIpCVIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.557
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.566
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.575
+!MESSAGE buffering callback sts4.classpath.VPInyBYS GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.584
+!MESSAGE buffering callback sts4.classpath.jNCxZqIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.593
+!MESSAGE buffering callback sts4.classpath.mdiHrBcJ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.602
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.611
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.619
+!MESSAGE buffering callback sts4.classpath.CGBGEhEE GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.628
+!MESSAGE buffering callback sts4.classpath.VGnirnDg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.637
+!MESSAGE buffering callback sts4.classpath.GEVUwFKx GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.646
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.654
+!MESSAGE buffering callback sts4.classpath.ZoFRrDYd GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.663
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.671
+!MESSAGE buffering callback sts4.classpath.kpPWzZgR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:56.679
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.688
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.696
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.704
+!MESSAGE buffering callback sts4.classpath.zATykGMb GoodsWebApp true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.713
+!MESSAGE buffering callback sts4.classpath.yVDSryms GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.722
+!MESSAGE buffering callback sts4.classpath.XkuMxLLg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:56.730
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.740
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.748
+!MESSAGE buffering callback sts4.classpath.fYdxuESC GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.757
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.765
+!MESSAGE buffering callback sts4.classpath.pVahxrFf GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.774
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.782
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.790
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.799
+!MESSAGE buffering callback sts4.classpath.USMBYUSG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.807
+!MESSAGE buffering callback sts4.classpath.DAbPgsQy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.816
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.824
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.832
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.842
+!MESSAGE buffering callback sts4.classpath.wlllNDvi GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.851
+!MESSAGE buffering callback sts4.classpath.VrRypENP GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.860
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.868
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.877
+!MESSAGE buffering callback sts4.classpath.BUpzbFaZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.885
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.894
+!MESSAGE buffering callback sts4.classpath.fHtTOiks GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.902
+!MESSAGE buffering callback sts4.classpath.oYhJMTRy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.910
+!MESSAGE buffering callback sts4.classpath.PhNrmqcM GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.919
+!MESSAGE buffering callback sts4.classpath.LuBIgsfD GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.928
+!MESSAGE buffering callback sts4.classpath.hxAxvKTW GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.937
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.946
+!MESSAGE buffering callback sts4.classpath.KKEVEmGg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.955
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.964
+!MESSAGE buffering callback sts4.classpath.TDNPfMxH GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.973
+!MESSAGE buffering callback sts4.classpath.TRLzkUgo GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.982
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:56.990
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.001
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.010
+!MESSAGE buffering callback sts4.classpath.SKEpWrBO GoodsWebApp true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.021
+!MESSAGE buffering callback sts4.classpath.eaenOvro GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.029
+!MESSAGE buffering callback sts4.classpath.zegYNHab GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.038
+!MESSAGE buffering callback sts4.classpath.MnbFUyux GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.047
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.056
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.066
+!MESSAGE buffering callback sts4.classpath.NvluXvQZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.074
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.084
+!MESSAGE buffering callback sts4.classpath.daLYWMJV GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.092
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.101
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.110
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.118
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.127
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.135
+!MESSAGE buffering callback sts4.classpath.sUCZcnEG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.144
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.153
+!MESSAGE buffering callback sts4.classpath.NGkBkWTR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.161
+!MESSAGE buffering callback sts4.classpath.CMIpCVIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.169
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.178
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.187
+!MESSAGE buffering callback sts4.classpath.VPInyBYS GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.196
+!MESSAGE buffering callback sts4.classpath.jNCxZqIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.204
+!MESSAGE buffering callback sts4.classpath.mdiHrBcJ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.212
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.221
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.229
+!MESSAGE buffering callback sts4.classpath.CGBGEhEE GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.238
+!MESSAGE buffering callback sts4.classpath.VGnirnDg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.246
+!MESSAGE buffering callback sts4.classpath.GEVUwFKx GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.254
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.263
+!MESSAGE buffering callback sts4.classpath.ZoFRrDYd GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.272
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.281
+!MESSAGE buffering callback sts4.classpath.kpPWzZgR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:57.291
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.300
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.309
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.317
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.326
+!MESSAGE buffering callback sts4.classpath.yVDSryms GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.337
+!MESSAGE buffering callback sts4.classpath.XkuMxLLg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:57.347
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.356
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.365
+!MESSAGE buffering callback sts4.classpath.fYdxuESC GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.374
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.384
+!MESSAGE buffering callback sts4.classpath.pVahxrFf GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.393
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.403
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.412
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.422
+!MESSAGE buffering callback sts4.classpath.USMBYUSG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.431
+!MESSAGE buffering callback sts4.classpath.DAbPgsQy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.440
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.451
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.460
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.469
+!MESSAGE buffering callback sts4.classpath.wlllNDvi GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.477
+!MESSAGE buffering callback sts4.classpath.VrRypENP GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.486
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.495
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.504
+!MESSAGE buffering callback sts4.classpath.BUpzbFaZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.513
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.522
+!MESSAGE buffering callback sts4.classpath.fHtTOiks GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.532
+!MESSAGE buffering callback sts4.classpath.oYhJMTRy GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.540
+!MESSAGE buffering callback sts4.classpath.PhNrmqcM GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.550
+!MESSAGE buffering callback sts4.classpath.LuBIgsfD GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.559
+!MESSAGE buffering callback sts4.classpath.hxAxvKTW GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.568
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.577
+!MESSAGE buffering callback sts4.classpath.KKEVEmGg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.586
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.595
+!MESSAGE buffering callback sts4.classpath.TDNPfMxH GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.604
+!MESSAGE buffering callback sts4.classpath.TRLzkUgo GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.612
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.621
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.630
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.639
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.649
+!MESSAGE buffering callback sts4.classpath.eaenOvro GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.659
+!MESSAGE buffering callback sts4.classpath.zegYNHab GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.668
+!MESSAGE buffering callback sts4.classpath.MnbFUyux GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.676
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.686
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.694
+!MESSAGE buffering callback sts4.classpath.NvluXvQZ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.703
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.711
+!MESSAGE buffering callback sts4.classpath.daLYWMJV GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.720
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.728
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.737
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.746
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.756
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.764
+!MESSAGE buffering callback sts4.classpath.sUCZcnEG GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.773
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.782
+!MESSAGE buffering callback sts4.classpath.NGkBkWTR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.790
+!MESSAGE buffering callback sts4.classpath.CMIpCVIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.799
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.808
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.816
+!MESSAGE buffering callback sts4.classpath.VPInyBYS GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.825
+!MESSAGE buffering callback sts4.classpath.jNCxZqIc GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.834
+!MESSAGE buffering callback sts4.classpath.mdiHrBcJ GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.842
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.851
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.859
+!MESSAGE buffering callback sts4.classpath.CGBGEhEE GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.868
+!MESSAGE buffering callback sts4.classpath.VGnirnDg GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.876
+!MESSAGE buffering callback sts4.classpath.GEVUwFKx GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.884
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.893
+!MESSAGE buffering callback sts4.classpath.ZoFRrDYd GoodsZuul-API-Gateway true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.902
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.911
+!MESSAGE buffering callback sts4.classpath.kpPWzZgR GoodsZuul-API-Gateway true 0
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-12-24 00:35:57.919
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.927
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.940
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-24 00:35:57.954
+!MESSAGE buffering callback sts4.classpath.zATykGMb GoodsWebApp true 0

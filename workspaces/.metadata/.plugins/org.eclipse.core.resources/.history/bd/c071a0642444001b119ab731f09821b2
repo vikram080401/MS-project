@@ -1,0 +1,57 @@
+package com.ecommerce.shopping.app.model;
+
+import javax.persistence.Column;
+
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class Users {
+
+
+	@Column(name="customeremailid", nullable = false, unique = true) //1
+	private String customeremailid;
+	
+	@Column(name="customrusername", nullable = false) //2
+	private String customerusername;
+	
+	@Column(name="password", nullable = false) //3
+	private String password;
+	
+	@Column(name="contactnumber", nullable = false) //4
+	private String contactnumber;
+
+	@Column(name="firstname", nullable = false) //5
+	private String firstname;
+	
+	@Column(name="lasttname", nullable = false) //6
+	private String lastname;
+	
+	@Column(name="dateofbirth", nullable = false) //7
+	private String dateofbirth;
+	
+	
+	
+	@Column(name="addressline1", nullable = false) //8
+	private String addressLine1;
+	
+	@Column(name="addressline2", nullable = true) //9
+	private String addressLine2;
+	
+	@Column(name="zipcode", nullable = false) //10
+	private String zipcode;
+	
+	private String city; //11
+	
+	private String state; //12
+	
+	
+	@Column(name="secretquestion", nullable = true) //13
+	private String secretquestion;
+	
+	@Column(name="Secretquestionanswer", nullable = true) //14
+	private String secretquestionanswer;
+    
+	
+
+}

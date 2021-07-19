@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: d0d73c593b70acdb761f
+            clientSecret: 345fd2ef6f0b01ad5269b4f94fb612b926af8004
+          google:
+            client-id: 683933642455-ersut06o300kurrf1ec2ckkktd6n8oru.apps.googleusercontent.com
+            client-secret: IDDzj9A3IgjPz0pegeBge-tu  application:    name: OAuth2-Server
+
+server:  port: 8005
+
+
+# ...

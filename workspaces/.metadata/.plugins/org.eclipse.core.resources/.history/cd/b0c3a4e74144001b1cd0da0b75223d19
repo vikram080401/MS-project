@@ -1,0 +1,70 @@
+package com.ecommerce.shopping.app.webconfig;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+
+import com.ecommerce.shopping.app.model.Users;
+
+public class CustomUserDetails implements  UserDetails{
+
+	@Autowired
+	private Users user;
+	
+	
+	public CustomUserDetails(Users user) {
+		
+		this.user = user;
+		System.out.println(user + ":1");
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getPassword() {
+		//System.out.println(getPassword().toString() + ":2");
+		return user.getPassword();
+		//return "$2a$10$6/v9ij/CO.Vs7ESnfpftwO736s0nhhAbB7GVcqFT58jXFdJWuWAnK";
+		
+	}
+
+	@Override
+	public String getUsername() {
+		
+		
+		return user.getCustomeremailid();
+		
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+}

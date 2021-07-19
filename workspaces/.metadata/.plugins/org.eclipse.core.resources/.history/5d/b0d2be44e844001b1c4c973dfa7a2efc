@@ -1,0 +1,2 @@
+microservice.customer-service.endpoints.endpoint.uri=hello
+microservice.customer-service.endpoints.operation.uri=hello

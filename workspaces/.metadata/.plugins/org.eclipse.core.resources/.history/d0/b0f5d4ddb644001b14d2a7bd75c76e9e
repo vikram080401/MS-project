@@ -1,0 +1,16 @@
+package com.goods.spring.mvc.app.service;
+
+import java.util.List;
+
+import com.ecommerce.shopping.app.model.Customers;
+
+public interface ICustomerService {
+	public List<Customers> getAllCustomer();
+	public Customers getOneCustomersbyID(long customerid);
+	public List<Customers> getCustomersbyfirstName(String firstname);
+	public Customers getOneCustomerbyEmailID(String emailid);
+	public Customers getCustomerbyDOB(String DOB);
+	public void DeleACustomer(long customerID);
+	public Customers AddNewCustomer(Customers customer);
+
+}

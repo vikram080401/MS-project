@@ -1,0 +1,5 @@
+package com.ecommerce.shopping.app.security;
+
+public class CustomerOAuthUser {
+
+}

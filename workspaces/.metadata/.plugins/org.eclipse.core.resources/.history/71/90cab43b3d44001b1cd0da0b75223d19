@@ -1,0 +1,10 @@
+package com.ecommerce.shopping.app.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.ecommerce.shopping.app.model.Users;
+
+public interface UserRepository  extends CrudRepository<Users, Integer>{
+
+	public User findBycustomeremailid(String customeremailid);
+}

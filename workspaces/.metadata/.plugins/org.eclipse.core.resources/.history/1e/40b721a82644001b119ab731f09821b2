@@ -1,0 +1,33 @@
+package com.ecommerce.shopping.app.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+
+import com.ecommerce.shopping.app.model.Users;
+
+@Controller
+public class AppController {
+
+	@GetMapping("")
+	public String viewHomePage() {
+		return "home";
+		
+	}
+	@GetMapping("/register")
+	public String ShowSignUpForm(Model model) {
+		model.addAttribute("user", new Users());
+		
+		return "signup_form";
+	}
+	
+	@PostMapping("/process_register")
+	public String Completeregistration(Users user) {
+		
+		return "registered";
+	}
+	
+	
+}

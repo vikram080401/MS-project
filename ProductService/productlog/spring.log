@@ -1,0 +1,865 @@
+2020-12-19 10:34:59.458  INFO 1188 --- [main] c.e.s.app.ProductServiceApplication      : Starting ProductServiceApplication using Java 15 on vikram with PID 1188 (F:\Edureka\FinalProject\ProductService\target\classes started by Abhinav in F:\Edureka\FinalProject\ProductService)
+2020-12-19 10:34:59.462  INFO 1188 --- [main] c.e.s.app.ProductServiceApplication      : No active profile set, falling back to default profiles: default
+2020-12-19 10:35:01.077  INFO 1188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-19 10:35:01.363  INFO 1188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 274 ms. Found 3 JPA repository interfaces.
+2020-12-19 10:35:01.716  INFO 1188 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0a6bbf1-ad3d-383a-8a06-9f89a1e717a0
+2020-12-19 10:35:02.240  INFO 1188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2020-12-19 10:35:02.254  INFO 1188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 10:35:02.255  INFO 1188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-19 10:35:02.542  INFO 1188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 10:35:02.543  INFO 1188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3001 ms
+2020-12-19 10:35:03.152  INFO 1188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-19 10:35:03.268  INFO 1188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-19 10:35:03.682  INFO 1188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-19 10:35:03.918  INFO 1188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-19 10:35:04.541  INFO 1188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-19 10:35:04.607  INFO 1188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-19 10:35:05.713  INFO 1188 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-19 10:35:05.723  INFO 1188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-19 10:35:06.473  WARN 1188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-19 10:35:06.673  INFO 1188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 10:35:06.854  INFO 1188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-12-19 10:35:07.956  INFO 1188 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2020-12-19 10:35:08.088  WARN 1188 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 10:35:08.097  INFO 1188 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-19 10:35:08.238  INFO 1188 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 10:35:08.314  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 10:35:08.322  INFO 1188 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 10:35:08.391  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 10:35:08.392  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 10:35:08.392  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 10:35:08.392  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 10:35:08.393  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 10:35:08.393  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 10:35:08.393  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 10:35:08.729  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 10:35:08.742  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 10:35:08.757  INFO 1188 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 10:35:08.790  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608354308788 with initial instances count: 0
+2020-12-19 10:35:08.796  INFO 1188 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2020-12-19 10:35:08.797  INFO 1188 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608354308797, current=UP, previous=STARTING]
+2020-12-19 10:35:08.803  INFO 1188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001: registering service...
+2020-12-19 10:35:08.862  INFO 1188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-19 10:35:08.864  INFO 1188 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2020-12-19 10:35:08.898  INFO 1188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - registration status: 204
+2020-12-19 10:35:09.058  INFO 1188 --- [main] c.e.s.app.ProductServiceApplication      : Started ProductServiceApplication in 10.305 seconds (JVM running for 12.278)
+2020-12-19 10:35:09.743  INFO 1188 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 10:35:09.743  INFO 1188 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 10:35:09.746  INFO 1188 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-12-19 10:35:38.745  INFO 1188 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 10:35:38.746  INFO 1188 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 10:35:38.747  INFO 1188 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 10:35:38.748  INFO 1188 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 10:35:38.749  INFO 1188 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 10:35:38.749  INFO 1188 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-12-19 10:35:38.750  INFO 1188 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 10:35:38.780  INFO 1188 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 10:39:28.403  INFO 1188 --- [http-nio-9001-exec-1] c.e.shopping.app.service.ProductService  : Product-Service: Adding new product Banana
+2020-12-19 10:39:28.583 DEBUG 1188 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 10:39:28.592 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Fruits]
+2020-12-19 10:39:28.599 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_] : [INTEGER]) - [1029]
+2020-12-19 10:39:28.608 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_] : [VARCHAR]) - [Fruits]
+2020-12-19 10:39:28.622 DEBUG 1188 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 10:39:28.622 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Fruits]
+2020-12-19 10:39:28.624 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_] : [INTEGER]) - [1029]
+2020-12-19 10:39:28.630 DEBUG 1188 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 10:39:28.630 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Banana]
+2020-12-19 10:39:28.633 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [59]
+2020-12-19 10:39:28.634 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [201]
+2020-12-19 10:39:28.634 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1029]
+2020-12-19 10:39:28.634 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Banana]
+2020-12-19 10:39:28.636 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:39:28.644 DEBUG 1188 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 10:39:28.645 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Banana]
+2020-12-19 10:39:28.648 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [59]
+2020-12-19 10:39:28.649 DEBUG 1188 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 10:39:28.650 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Banana]
+2020-12-19 10:39:28.652 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [59]
+2020-12-19 10:39:28.723 DEBUG 1188 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : update tbl_products set availablequantity=?, idcategory=?, description=?, price=? where idproduct=?
+2020-12-19 10:39:28.725 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [211]
+2020-12-19 10:39:28.726 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1029]
+2020-12-19 10:39:28.727 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Banana]
+2020-12-19 10:39:28.728 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [NUMERIC] - [1.99]
+2020-12-19 10:39:28.731 TRACE 1188 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [59]
+2020-12-19 10:40:08.414  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 10:40:38.328  INFO 1188 --- [http-nio-9001-exec-5] c.e.shopping.app.service.ProductService  : Product-Service: Adding new product T-Shirt 33 size
+2020-12-19 10:40:38.329 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 10:40:38.331 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cloths]
+2020-12-19 10:40:38.346 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : insert into tbl_category (description) values (?)
+2020-12-19 10:40:38.347 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cloths]
+2020-12-19 10:40:38.590 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 10:40:38.592 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 33 size]
+2020-12-19 10:40:38.613 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2020-12-19 10:40:38.687 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2020-12-19 10:40:38.878 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : insert into tbl_products (availablequantity, idcategory, description, price, idproduct) values (?, ?, ?, ?, ?)
+2020-12-19 10:40:38.881 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [100]
+2020-12-19 10:40:38.882 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1030]
+2020-12-19 10:40:38.884 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [T-Shirt 33 size]
+2020-12-19 10:40:38.885 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [NUMERIC] - [11.99]
+2020-12-19 10:40:38.886 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [60]
+2020-12-19 10:41:20.176  INFO 1188 --- [http-nio-9001-exec-6] c.e.shopping.app.service.ProductService  : Product-Service: Adding new product T-Shirt 34 size
+2020-12-19 10:41:20.178 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 10:41:20.179 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cloths]
+2020-12-19 10:41:20.181 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_] : [INTEGER]) - [1030]
+2020-12-19 10:41:20.181 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_] : [VARCHAR]) - [Cloths]
+2020-12-19 10:41:20.183 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 10:41:20.183 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cloths]
+2020-12-19 10:41:20.185 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_] : [INTEGER]) - [1030]
+2020-12-19 10:41:20.186 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 10:41:20.187 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 10:41:20.191 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2020-12-19 10:41:20.193 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2020-12-19 10:41:20.358 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : insert into tbl_products (availablequantity, idcategory, description, price, idproduct) values (?, ?, ?, ?, ?)
+2020-12-19 10:41:20.359 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [100]
+2020-12-19 10:41:20.359 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1030]
+2020-12-19 10:41:20.360 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 10:41:20.360 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [NUMERIC] - [11.99]
+2020-12-19 10:41:20.360 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [61]
+2020-12-19 10:41:57.114  INFO 1188 --- [http-nio-9001-exec-8] c.e.shopping.app.service.ProductService  : Product-Service: Adding new product T-Shirt 34 size
+2020-12-19 10:41:57.115 DEBUG 1188 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 10:41:57.117 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cloths]
+2020-12-19 10:41:57.133 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_] : [INTEGER]) - [1030]
+2020-12-19 10:41:57.133 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_] : [VARCHAR]) - [Cloths]
+2020-12-19 10:41:57.135 DEBUG 1188 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 10:41:57.135 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cloths]
+2020-12-19 10:41:57.137 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_] : [INTEGER]) - [1030]
+2020-12-19 10:41:57.138 DEBUG 1188 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 10:41:57.139 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 10:41:57.141 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 10:41:57.142 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [100]
+2020-12-19 10:41:57.143 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 10:41:57.143 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 34 size]
+2020-12-19 10:41:57.144 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 10:41:57.147 DEBUG 1188 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 10:41:57.149 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 10:41:57.151 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 10:41:57.152 DEBUG 1188 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 10:41:57.153 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 10:41:57.155 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 10:41:57.158 DEBUG 1188 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : update tbl_products set availablequantity=?, idcategory=?, description=?, price=? where idproduct=?
+2020-12-19 10:41:57.158 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [110]
+2020-12-19 10:41:57.159 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1030]
+2020-12-19 10:41:57.159 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 10:41:57.159 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [NUMERIC] - [11.99]
+2020-12-19 10:41:57.160 TRACE 1188 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [61]
+2020-12-19 10:42:34.592 DEBUG 1188 --- [http-nio-9001-exec-9] org.hibernate.SQL                        : select city0_.id as id1_0_, city0_.name as name2_0_, city0_.population as populati3_0_ from cities city0_
+2020-12-19 10:42:34.604 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [1]
+2020-12-19 10:42:34.604 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Bratislava]
+2020-12-19 10:42:34.604 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [432000]
+2020-12-19 10:42:34.605 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [2]
+2020-12-19 10:42:34.605 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Budapest]
+2020-12-19 10:42:34.605 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1759000]
+2020-12-19 10:42:34.606 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [3]
+2020-12-19 10:42:34.606 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Prague]
+2020-12-19 10:42:34.606 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1280000]
+2020-12-19 10:42:34.607 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [4]
+2020-12-19 10:42:34.607 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Warsaw]
+2020-12-19 10:42:34.607 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1748000]
+2020-12-19 10:42:34.608 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [5]
+2020-12-19 10:42:34.608 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Los Angeles]
+2020-12-19 10:42:34.609 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [3971000]
+2020-12-19 10:42:34.609 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [6]
+2020-12-19 10:42:34.610 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [New York]
+2020-12-19 10:42:34.610 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [8550000]
+2020-12-19 10:42:34.610 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [7]
+2020-12-19 10:42:34.611 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Edinburgh]
+2020-12-19 10:42:34.611 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [464000]
+2020-12-19 10:42:34.611 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [8]
+2020-12-19 10:42:34.612 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Berlin]
+2020-12-19 10:42:34.612 TRACE 1188 --- [http-nio-9001-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [3671000]
+2020-12-19 10:42:49.951 DEBUG 1188 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_
+2020-12-19 10:42:49.953 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [1]
+2020-12-19 10:42:49.954 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [400]
+2020-12-19 10:42:49.954 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.954 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung Galaxy S20 blue]
+2020-12-19 10:42:49.955 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [849.99]
+2020-12-19 10:42:49.955 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [34]
+2020-12-19 10:42:49.956 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.956 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.956 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung Galaxy S10e pale blue]
+2020-12-19 10:42:49.957 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [749.99]
+2020-12-19 10:42:49.957 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [35]
+2020-12-19 10:42:49.957 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.958 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.958 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung Galaxy S30]
+2020-12-19 10:42:49.958 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:42:49.959 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [36]
+2020-12-19 10:42:49.960 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.960 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.961 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone S30]
+2020-12-19 10:42:49.962 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:42:49.962 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [37]
+2020-12-19 10:42:49.963 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.964 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.964 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone X]
+2020-12-19 10:42:49.965 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:42:49.965 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [38]
+2020-12-19 10:42:49.966 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.966 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.966 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone XR]
+2020-12-19 10:42:49.967 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:42:49.968 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [39]
+2020-12-19 10:42:49.969 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.970 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.970 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone XS]
+2020-12-19 10:42:49.971 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:42:49.971 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [40]
+2020-12-19 10:42:49.972 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.972 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.972 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE]
+2020-12-19 10:42:49.972 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [249.99]
+2020-12-19 10:42:49.973 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [41]
+2020-12-19 10:42:49.974 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.974 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.974 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2021]
+2020-12-19 10:42:49.974 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [449.99]
+2020-12-19 10:42:49.975 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [42]
+2020-12-19 10:42:49.975 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.975 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.976 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2022]
+2020-12-19 10:42:49.976 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [549.99]
+2020-12-19 10:42:49.976 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [43]
+2020-12-19 10:42:49.977 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.978 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.978 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2023]
+2020-12-19 10:42:49.979 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:42:49.979 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [45]
+2020-12-19 10:42:49.979 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.980 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.980 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2025]
+2020-12-19 10:42:49.981 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:42:49.981 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [46]
+2020-12-19 10:42:49.982 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.983 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:42:49.984 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2028]
+2020-12-19 10:42:49.984 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:42:49.985 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [53]
+2020-12-19 10:42:49.985 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.986 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1027]
+2020-12-19 10:42:49.986 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung smart TV]
+2020-12-19 10:42:49.986 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:42:49.987 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [54]
+2020-12-19 10:42:49.987 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.987 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1027]
+2020-12-19 10:42:49.988 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung OL Dryer]
+2020-12-19 10:42:49.988 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:42:49.988 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [55]
+2020-12-19 10:42:49.989 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:42:49.989 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 10:42:49.989 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Parle-G]
+2020-12-19 10:42:49.990 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:42:49.990 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [56]
+2020-12-19 10:42:49.990 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 10:42:49.991 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 10:42:49.991 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 10:42:49.991 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:42:49.991 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [57]
+2020-12-19 10:42:49.992 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 10:42:49.993 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 10:42:49.993 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 10:42:49.993 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:42:49.994 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [58]
+2020-12-19 10:42:49.995 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 10:42:49.996 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 10:42:49.996 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 10:42:49.997 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:42:49.998 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [59]
+2020-12-19 10:42:50.000 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [211]
+2020-12-19 10:42:50.000 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1029]
+2020-12-19 10:42:50.001 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Banana]
+2020-12-19 10:42:50.001 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:42:50.001 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [60]
+2020-12-19 10:42:50.001 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [100]
+2020-12-19 10:42:50.002 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 10:42:50.002 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 33 size]
+2020-12-19 10:42:50.002 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 10:42:50.003 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 10:42:50.003 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [110]
+2020-12-19 10:42:50.004 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 10:42:50.004 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 34 size]
+2020-12-19 10:42:50.004 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 10:42:50.005 DEBUG 1188 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:42:50.005 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2020-12-19 10:42:50.017 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Mobile]
+2020-12-19 10:42:50.020 DEBUG 1188 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:42:50.020 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1027]
+2020-12-19 10:42:50.022 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Dryer]
+2020-12-19 10:42:50.023 DEBUG 1188 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:42:50.023 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1028]
+2020-12-19 10:42:50.024 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Food]
+2020-12-19 10:42:50.025 DEBUG 1188 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:42:50.026 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1029]
+2020-12-19 10:42:50.028 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Fruits]
+2020-12-19 10:42:50.029 DEBUG 1188 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:42:50.030 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1030]
+2020-12-19 10:42:50.031 TRACE 1188 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Cloths]
+2020-12-19 10:44:43.352 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : select count(*) as col_0_0_ from tbl_products product0_ where product0_.idproduct=?
+2020-12-19 10:44:43.353 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2020-12-19 10:44:43.355 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [1]
+2020-12-19 10:44:43.360 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_0_, product0_.availablequantity as availabl2_2_0_, product0_.idcategory as idcatego5_2_0_, product0_.description as descript3_2_0_, product0_.price as price4_2_0_, category1_.idcategory as idcatego1_1_1_, category1_.description as descript2_1_1_ from tbl_products product0_ left outer join tbl_category category1_ on product0_.idcategory=category1_.idcategory where product0_.idproduct=?
+2020-12-19 10:44:43.360 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2020-12-19 10:44:43.362 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_1_] : [INTEGER]) - [1]
+2020-12-19 10:44:43.362 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_0_] : [INTEGER]) - [400]
+2020-12-19 10:44:43.363 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_0_] : [INTEGER]) - [1]
+2020-12-19 10:44:43.363 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_0_] : [VARCHAR]) - [Samsung Galaxy S20 blue]
+2020-12-19 10:44:43.363 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_0_] : [NUMERIC]) - [849.99]
+2020-12-19 10:44:43.363 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_1_] : [VARCHAR]) - [Mobile]
+2020-12-19 10:44:43.373 DEBUG 1188 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : delete from tbl_products where idproduct=?
+2020-12-19 10:44:43.374 TRACE 1188 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2020-12-19 10:44:56.848 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_
+2020-12-19 10:44:56.870 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [34]
+2020-12-19 10:44:56.870 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.870 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.871 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung Galaxy S10e pale blue]
+2020-12-19 10:44:56.871 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [749.99]
+2020-12-19 10:44:56.871 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [35]
+2020-12-19 10:44:56.871 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.872 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.872 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung Galaxy S30]
+2020-12-19 10:44:56.872 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:44:56.872 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [36]
+2020-12-19 10:44:56.873 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.873 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.873 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone S30]
+2020-12-19 10:44:56.873 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:44:56.873 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [37]
+2020-12-19 10:44:56.874 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.874 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.874 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone X]
+2020-12-19 10:44:56.874 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:44:56.874 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [38]
+2020-12-19 10:44:56.874 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.875 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.875 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone XR]
+2020-12-19 10:44:56.875 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:44:56.875 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [39]
+2020-12-19 10:44:56.876 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.876 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.876 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone XS]
+2020-12-19 10:44:56.876 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 10:44:56.876 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [40]
+2020-12-19 10:44:56.876 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.876 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.877 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE]
+2020-12-19 10:44:56.877 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [249.99]
+2020-12-19 10:44:56.877 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [41]
+2020-12-19 10:44:56.877 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.877 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.877 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2021]
+2020-12-19 10:44:56.878 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [449.99]
+2020-12-19 10:44:56.878 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [42]
+2020-12-19 10:44:56.879 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.879 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.880 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2022]
+2020-12-19 10:44:56.880 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [549.99]
+2020-12-19 10:44:56.881 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [43]
+2020-12-19 10:44:56.881 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.882 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.882 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2023]
+2020-12-19 10:44:56.882 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:44:56.882 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [45]
+2020-12-19 10:44:56.883 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.883 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.883 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2025]
+2020-12-19 10:44:56.883 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:44:56.884 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [46]
+2020-12-19 10:44:56.884 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.884 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 10:44:56.884 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2028]
+2020-12-19 10:44:56.885 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:44:56.885 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [53]
+2020-12-19 10:44:56.885 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.886 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1027]
+2020-12-19 10:44:56.886 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung smart TV]
+2020-12-19 10:44:56.886 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:44:56.886 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [54]
+2020-12-19 10:44:56.886 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.887 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1027]
+2020-12-19 10:44:56.887 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung OL Dryer]
+2020-12-19 10:44:56.887 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 10:44:56.887 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [55]
+2020-12-19 10:44:56.887 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 10:44:56.888 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 10:44:56.888 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Parle-G]
+2020-12-19 10:44:56.888 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:44:56.888 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [56]
+2020-12-19 10:44:56.888 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 10:44:56.889 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 10:44:56.889 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 10:44:56.889 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:44:56.889 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [57]
+2020-12-19 10:44:56.890 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 10:44:56.890 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 10:44:56.890 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 10:44:56.890 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:44:56.891 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [58]
+2020-12-19 10:44:56.891 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 10:44:56.891 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 10:44:56.891 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 10:44:56.891 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:44:56.892 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [59]
+2020-12-19 10:44:56.892 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [211]
+2020-12-19 10:44:56.892 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1029]
+2020-12-19 10:44:56.892 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Banana]
+2020-12-19 10:44:56.892 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 10:44:56.893 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [60]
+2020-12-19 10:44:56.893 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [100]
+2020-12-19 10:44:56.893 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 10:44:56.893 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 33 size]
+2020-12-19 10:44:56.893 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 10:44:56.893 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 10:44:56.894 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [110]
+2020-12-19 10:44:56.894 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 10:44:56.894 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 34 size]
+2020-12-19 10:44:56.894 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 10:44:56.895 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:44:56.896 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2020-12-19 10:44:56.913 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Mobile]
+2020-12-19 10:44:56.915 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:44:56.915 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1027]
+2020-12-19 10:44:56.917 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Dryer]
+2020-12-19 10:44:56.917 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:44:56.917 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1028]
+2020-12-19 10:44:56.919 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Food]
+2020-12-19 10:44:56.919 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:44:56.920 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1029]
+2020-12-19 10:44:56.921 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Fruits]
+2020-12-19 10:44:56.921 DEBUG 1188 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 10:44:56.922 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1030]
+2020-12-19 10:44:56.923 TRACE 1188 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Cloths]
+2020-12-19 10:45:08.424  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 10:47:04.249 DEBUG 1188 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select city0_.id as id1_0_, city0_.name as name2_0_, city0_.population as populati3_0_ from cities city0_
+2020-12-19 10:47:04.288 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [1]
+2020-12-19 10:47:04.288 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Bratislava]
+2020-12-19 10:47:04.288 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [432000]
+2020-12-19 10:47:04.288 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [2]
+2020-12-19 10:47:04.288 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Budapest]
+2020-12-19 10:47:04.288 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1759000]
+2020-12-19 10:47:04.289 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [3]
+2020-12-19 10:47:04.289 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Prague]
+2020-12-19 10:47:04.289 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1280000]
+2020-12-19 10:47:04.289 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [4]
+2020-12-19 10:47:04.289 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Warsaw]
+2020-12-19 10:47:04.289 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1748000]
+2020-12-19 10:47:04.290 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [5]
+2020-12-19 10:47:04.290 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Los Angeles]
+2020-12-19 10:47:04.290 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [3971000]
+2020-12-19 10:47:04.290 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [6]
+2020-12-19 10:47:04.290 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [New York]
+2020-12-19 10:47:04.290 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [8550000]
+2020-12-19 10:47:04.291 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [7]
+2020-12-19 10:47:04.291 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Edinburgh]
+2020-12-19 10:47:04.292 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [464000]
+2020-12-19 10:47:04.292 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [8]
+2020-12-19 10:47:04.292 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Berlin]
+2020-12-19 10:47:04.292 TRACE 1188 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [3671000]
+2020-12-19 10:50:08.440  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 10:55:08.442  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:00:08.451  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:05:08.463  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:10:08.466  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:15:08.471  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:20:08.482  INFO 1188 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:20:19.695  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-19 11:20:19.696  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+2020-12-19 11:20:19.696  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608357019696, current=DOWN, previous=UP]
+2020-12-19 11:20:19.696  INFO 1188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001: registering service...
+2020-12-19 11:20:19.710  INFO 1188 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - registration status: 204
+2020-12-19 11:20:19.737  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-19 11:20:19.740  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-19 11:20:19.745  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-19 11:20:19.751  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-19 11:20:19.755  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-12-19 11:20:22.802  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-12-19 11:20:22.809  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - deregister  status: 200
+2020-12-19 11:20:22.997  INFO 1188 --- [RMI TCP Connection(48)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-12-19 11:50:47.298  INFO 9088 --- [main] c.e.s.app.ProductServiceApplication      : Starting ProductServiceApplication using Java 15 on vikram with PID 9088 (F:\Edureka\FinalProject\ProductService\target\classes started by Abhinav in F:\Edureka\FinalProject\ProductService)
+2020-12-19 11:50:47.304  INFO 9088 --- [main] c.e.s.app.ProductServiceApplication      : No active profile set, falling back to default profiles: default
+2020-12-19 11:50:49.158  INFO 9088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-19 11:50:49.504  INFO 9088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 332 ms. Found 3 JPA repository interfaces.
+2020-12-19 11:50:49.950  INFO 9088 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0a6bbf1-ad3d-383a-8a06-9f89a1e717a0
+2020-12-19 11:50:50.689  INFO 9088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2020-12-19 11:50:50.722  INFO 9088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 11:50:50.725  INFO 9088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-19 11:50:51.170  INFO 9088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 11:50:51.171  INFO 9088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3764 ms
+2020-12-19 11:50:51.563  INFO 9088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-19 11:50:51.643  INFO 9088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-19 11:50:51.860  INFO 9088 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-19 11:50:52.061  INFO 9088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-19 11:50:52.699  INFO 9088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-19 11:50:52.763  INFO 9088 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-19 11:50:53.891  INFO 9088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-19 11:50:53.902  INFO 9088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-19 11:50:54.495  WARN 9088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-19 11:50:54.659  INFO 9088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 11:50:54.782  INFO 9088 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-12-19 11:50:55.737  INFO 9088 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2020-12-19 11:50:55.832  WARN 9088 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 11:50:55.840  INFO 9088 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-19 11:50:55.976  INFO 9088 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 11:50:56.052  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 11:50:56.062  INFO 9088 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:50:56.129  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 11:50:56.129  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 11:50:56.130  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 11:50:56.130  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 11:50:56.130  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 11:50:56.130  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 11:50:56.130  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 11:50:56.389  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 11:50:56.399  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 11:50:56.409  INFO 9088 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 11:50:56.432  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608358856430 with initial instances count: 0
+2020-12-19 11:50:56.438  INFO 9088 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2020-12-19 11:50:56.439  INFO 9088 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608358856439, current=UP, previous=STARTING]
+2020-12-19 11:50:56.442  INFO 9088 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001: registering service...
+2020-12-19 11:50:56.490  INFO 9088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-19 11:50:56.492  INFO 9088 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2020-12-19 11:50:56.517  INFO 9088 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - registration status: 204
+2020-12-19 11:50:56.671  INFO 9088 --- [main] c.e.s.app.ProductServiceApplication      : Started ProductServiceApplication in 10.201 seconds (JVM running for 12.844)
+2020-12-19 11:50:57.006  INFO 9088 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 11:50:57.006  INFO 9088 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 11:50:57.008  INFO 9088 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-12-19 11:51:26.400  INFO 9088 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 11:51:26.401  INFO 9088 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 11:51:26.402  INFO 9088 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 11:51:26.402  INFO 9088 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 11:51:26.403  INFO 9088 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 11:51:26.403  INFO 9088 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-12-19 11:51:26.403  INFO 9088 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 11:51:26.423  INFO 9088 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 11:51:42.446 DEBUG 9088 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : select city0_.id as id1_0_, city0_.name as name2_0_, city0_.population as populati3_0_ from cities city0_
+2020-12-19 11:51:42.457 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [1]
+2020-12-19 11:51:42.464 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Bratislava]
+2020-12-19 11:51:42.465 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [432000]
+2020-12-19 11:51:42.466 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [2]
+2020-12-19 11:51:42.467 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Budapest]
+2020-12-19 11:51:42.467 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1759000]
+2020-12-19 11:51:42.467 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [3]
+2020-12-19 11:51:42.468 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Prague]
+2020-12-19 11:51:42.468 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1280000]
+2020-12-19 11:51:42.468 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [4]
+2020-12-19 11:51:42.469 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Warsaw]
+2020-12-19 11:51:42.469 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [1748000]
+2020-12-19 11:51:42.469 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [5]
+2020-12-19 11:51:42.470 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Los Angeles]
+2020-12-19 11:51:42.470 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [3971000]
+2020-12-19 11:51:42.470 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [6]
+2020-12-19 11:51:42.470 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [New York]
+2020-12-19 11:51:42.471 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [8550000]
+2020-12-19 11:51:42.471 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [7]
+2020-12-19 11:51:42.471 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Edinburgh]
+2020-12-19 11:51:42.472 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [464000]
+2020-12-19 11:51:42.473 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [BIGINT]) - [8]
+2020-12-19 11:51:42.474 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_] : [VARCHAR]) - [Berlin]
+2020-12-19 11:51:42.474 TRACE 9088 --- [http-nio-9001-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([populati3_0_] : [INTEGER]) - [3671000]
+2020-12-19 11:51:48.996 DEBUG 9088 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_
+2020-12-19 11:51:48.998 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [34]
+2020-12-19 11:51:49.000 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.002 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.002 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung Galaxy S10e pale blue]
+2020-12-19 11:51:49.005 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [749.99]
+2020-12-19 11:51:49.006 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [35]
+2020-12-19 11:51:49.006 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.006 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.007 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung Galaxy S30]
+2020-12-19 11:51:49.007 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 11:51:49.008 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [36]
+2020-12-19 11:51:49.008 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.009 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.009 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone S30]
+2020-12-19 11:51:49.009 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 11:51:49.010 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [37]
+2020-12-19 11:51:49.010 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.011 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.011 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone X]
+2020-12-19 11:51:49.011 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 11:51:49.012 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [38]
+2020-12-19 11:51:49.012 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.013 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.013 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone XR]
+2020-12-19 11:51:49.014 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 11:51:49.014 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [39]
+2020-12-19 11:51:49.015 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.015 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.018 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone XS]
+2020-12-19 11:51:49.020 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [949.99]
+2020-12-19 11:51:49.021 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [40]
+2020-12-19 11:51:49.022 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.023 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.023 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE]
+2020-12-19 11:51:49.024 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [249.99]
+2020-12-19 11:51:49.024 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [41]
+2020-12-19 11:51:49.025 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.025 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.025 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2021]
+2020-12-19 11:51:49.026 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [449.99]
+2020-12-19 11:51:49.026 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [42]
+2020-12-19 11:51:49.026 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.027 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.027 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2022]
+2020-12-19 11:51:49.028 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [549.99]
+2020-12-19 11:51:49.028 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [43]
+2020-12-19 11:51:49.029 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.029 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.029 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2023]
+2020-12-19 11:51:49.030 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 11:51:49.030 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [45]
+2020-12-19 11:51:49.031 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.031 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.031 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2025]
+2020-12-19 11:51:49.032 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 11:51:49.032 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [46]
+2020-12-19 11:51:49.035 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.036 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1]
+2020-12-19 11:51:49.037 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Iphone SE2028]
+2020-12-19 11:51:49.038 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 11:51:49.038 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [53]
+2020-12-19 11:51:49.039 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.039 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1027]
+2020-12-19 11:51:49.039 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung smart TV]
+2020-12-19 11:51:49.040 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 11:51:49.040 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [54]
+2020-12-19 11:51:49.041 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.041 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1027]
+2020-12-19 11:51:49.041 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Samsung OL Dryer]
+2020-12-19 11:51:49.042 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [649.99]
+2020-12-19 11:51:49.042 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [55]
+2020-12-19 11:51:49.043 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [500]
+2020-12-19 11:51:49.043 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 11:51:49.044 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Parle-G]
+2020-12-19 11:51:49.044 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 11:51:49.044 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [56]
+2020-12-19 11:51:49.045 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 11:51:49.045 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 11:51:49.045 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 11:51:49.046 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 11:51:49.046 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [57]
+2020-12-19 11:51:49.046 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 11:51:49.047 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 11:51:49.047 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 11:51:49.047 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 11:51:49.048 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [58]
+2020-12-19 11:51:49.053 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [1000]
+2020-12-19 11:51:49.055 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1028]
+2020-12-19 11:51:49.056 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Britania-Biscuit]
+2020-12-19 11:51:49.056 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 11:51:49.056 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [59]
+2020-12-19 11:51:49.057 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [211]
+2020-12-19 11:51:49.057 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1029]
+2020-12-19 11:51:49.057 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [Banana]
+2020-12-19 11:51:49.058 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [1.99]
+2020-12-19 11:51:49.058 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [60]
+2020-12-19 11:51:49.059 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [100]
+2020-12-19 11:51:49.059 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 11:51:49.059 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 33 size]
+2020-12-19 11:51:49.060 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 11:51:49.060 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:51:49.060 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [110]
+2020-12-19 11:51:49.061 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 11:51:49.061 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 34 size]
+2020-12-19 11:51:49.061 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 11:51:49.073 DEBUG 9088 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 11:51:49.074 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2020-12-19 11:51:49.080 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Mobile]
+2020-12-19 11:51:49.083 DEBUG 9088 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 11:51:49.085 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1027]
+2020-12-19 11:51:49.087 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Dryer]
+2020-12-19 11:51:49.088 DEBUG 9088 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 11:51:49.089 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1028]
+2020-12-19 11:51:49.091 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Food]
+2020-12-19 11:51:49.092 DEBUG 9088 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 11:51:49.093 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1029]
+2020-12-19 11:51:49.095 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Fruits]
+2020-12-19 11:51:49.096 DEBUG 9088 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 11:51:49.096 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1030]
+2020-12-19 11:51:49.098 TRACE 9088 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Cloths]
+2020-12-19 11:52:53.582 DEBUG 9088 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:52:53.584 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:52:53.585 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:52:53.586 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [110]
+2020-12-19 11:52:53.586 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 11:52:53.586 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 34 size]
+2020-12-19 11:52:53.587 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 11:52:53.587 DEBUG 9088 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 11:52:53.587 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1030]
+2020-12-19 11:52:53.589 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Cloths]
+2020-12-19 11:52:53.591 DEBUG 9088 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:52:53.591 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:52:53.593 TRACE 9088 --- [http-nio-9001-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:52:53.631 ERROR 9088 --- [http-nio-9001-exec-6] c.e.shopping.app.service.ProductService  : Product-Service: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.ecommerce.shopping.app.model.Product.category -> com.ecommerce.shopping.app.model.Category; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.ecommerce.shopping.app.model.Product.category -> com.ecommerce.shopping.app.model.Category
+2020-12-19 11:53:15.683 DEBUG 9088 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:53:15.684 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:53:15.687 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:53:15.688 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [110]
+2020-12-19 11:53:15.688 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 11:53:15.688 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 34 size]
+2020-12-19 11:53:15.689 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 11:53:15.689 DEBUG 9088 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 11:53:15.690 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1030]
+2020-12-19 11:53:15.692 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Cloths]
+2020-12-19 11:53:15.693 DEBUG 9088 --- [http-nio-9001-exec-7] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:53:15.694 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:53:15.696 TRACE 9088 --- [http-nio-9001-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:53:15.708 ERROR 9088 --- [http-nio-9001-exec-7] c.e.shopping.app.service.ProductService  : Product-Service: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.ecommerce.shopping.app.model.Product.category -> com.ecommerce.shopping.app.model.Category; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.ecommerce.shopping.app.model.Product.category -> com.ecommerce.shopping.app.model.Category
+2020-12-19 11:53:31.305 DEBUG 9088 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:53:31.307 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:53:31.308 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:53:31.309 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [110]
+2020-12-19 11:53:31.309 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 11:53:31.309 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 34 size]
+2020-12-19 11:53:31.310 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 11:53:31.310 DEBUG 9088 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_0_, category0_.description as descript2_1_0_ from tbl_category category0_ where category0_.idcategory=?
+2020-12-19 11:53:31.310 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1030]
+2020-12-19 11:53:31.312 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_0_] : [VARCHAR]) - [Cloths]
+2020-12-19 11:53:31.313 DEBUG 9088 --- [http-nio-9001-exec-8] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:53:31.313 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:53:31.315 TRACE 9088 --- [http-nio-9001-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:53:31.319 ERROR 9088 --- [http-nio-9001-exec-8] c.e.shopping.app.service.ProductService  : Product-Service: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.ecommerce.shopping.app.model.Product.category -> com.ecommerce.shopping.app.model.Category; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.ecommerce.shopping.app.model.Product.category -> com.ecommerce.shopping.app.model.Category
+2020-12-19 11:55:56.143  INFO 9088 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:56:22.974  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-19 11:56:22.975  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+2020-12-19 11:56:22.975  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608359182975, current=DOWN, previous=UP]
+2020-12-19 11:56:22.976  INFO 9088 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001: registering service...
+2020-12-19 11:56:22.981  INFO 9088 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - registration status: 204
+2020-12-19 11:56:23.013  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-19 11:56:23.016  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-19 11:56:23.020  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-19 11:56:23.030  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-19 11:56:23.034  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-12-19 11:56:26.080  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-12-19 11:56:26.087  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - deregister  status: 200
+2020-12-19 11:56:26.177  INFO 9088 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-12-19 11:56:34.094  INFO 11868 --- [main] c.e.s.app.ProductServiceApplication      : Starting ProductServiceApplication using Java 15 on vikram with PID 11868 (F:\Edureka\FinalProject\ProductService\target\classes started by Abhinav in F:\Edureka\FinalProject\ProductService)
+2020-12-19 11:56:34.101  INFO 11868 --- [main] c.e.s.app.ProductServiceApplication      : No active profile set, falling back to default profiles: default
+2020-12-19 11:56:35.430  INFO 11868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-19 11:56:35.635  INFO 11868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 194 ms. Found 3 JPA repository interfaces.
+2020-12-19 11:56:35.941  INFO 11868 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0a6bbf1-ad3d-383a-8a06-9f89a1e717a0
+2020-12-19 11:56:36.444  INFO 11868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2020-12-19 11:56:36.457  INFO 11868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-19 11:56:36.458  INFO 11868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-19 11:56:36.721  INFO 11868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-19 11:56:36.722  INFO 11868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2549 ms
+2020-12-19 11:56:37.070  INFO 11868 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-19 11:56:37.163  INFO 11868 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-19 11:56:37.345  INFO 11868 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-19 11:56:37.488  INFO 11868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-19 11:56:37.959  INFO 11868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-19 11:56:37.996  INFO 11868 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-19 11:56:38.987  INFO 11868 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-19 11:56:38.997  INFO 11868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-19 11:56:39.577  WARN 11868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-19 11:56:39.727  INFO 11868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-19 11:56:39.846  INFO 11868 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-12-19 11:56:40.780  INFO 11868 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2020-12-19 11:56:40.869  WARN 11868 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-12-19 11:56:40.879  INFO 11868 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-12-19 11:56:40.999  INFO 11868 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-12-19 11:56:41.076  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-12-19 11:56:41.083  INFO 11868 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-12-19 11:56:41.145  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 11:56:41.145  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 11:56:41.145  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 11:56:41.145  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 11:56:41.146  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 11:56:41.146  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-12-19 11:56:41.146  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 11:56:41.387  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 11:56:41.398  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-12-19 11:56:41.407  INFO 11868 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-12-19 11:56:41.432  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1608359201430 with initial instances count: 0
+2020-12-19 11:56:41.437  INFO 11868 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2020-12-19 11:56:41.438  INFO 11868 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608359201438, current=UP, previous=STARTING]
+2020-12-19 11:56:41.441  INFO 11868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001: registering service...
+2020-12-19 11:56:41.489  INFO 11868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2020-12-19 11:56:41.492  INFO 11868 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2020-12-19 11:56:41.516  INFO 11868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - registration status: 204
+2020-12-19 11:56:41.664  INFO 11868 --- [main] c.e.s.app.ProductServiceApplication      : Started ProductServiceApplication in 8.338 seconds (JVM running for 9.586)
+2020-12-19 11:56:43.306  INFO 11868 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-19 11:56:43.306  INFO 11868 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-19 11:56:43.308  INFO 11868 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-12-19 11:56:48.455 DEBUG 11868 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 11:56:48.462 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cloths]
+2020-12-19 11:56:48.466 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_] : [INTEGER]) - [1030]
+2020-12-19 11:56:48.472 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_] : [VARCHAR]) - [Cloths]
+2020-12-19 11:56:48.484 DEBUG 11868 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:56:48.484 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:56:48.486 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:56:48.487 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [110]
+2020-12-19 11:56:48.487 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 11:56:48.487 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 34 size]
+2020-12-19 11:56:48.488 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 11:56:48.493 DEBUG 11868 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:56:48.494 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:56:48.495 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [61]
+2020-12-19 11:56:48.554 DEBUG 11868 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : update tbl_products set availablequantity=?, idcategory=?, description=?, price=? where idproduct=?
+2020-12-19 11:56:48.556 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [105]
+2020-12-19 11:56:48.557 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1030]
+2020-12-19 11:56:48.558 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [T-Shirt 34 size]
+2020-12-19 11:56:48.559 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [NUMERIC] - [11.99]
+2020-12-19 11:56:48.560 TRACE 11868 --- [http-nio-9001-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [61]
+2020-12-19 11:57:11.416  INFO 11868 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-12-19 11:57:11.417  INFO 11868 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-12-19 11:57:11.418  INFO 11868 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-12-19 11:57:11.418  INFO 11868 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-12-19 11:57:11.419  INFO 11868 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-12-19 11:57:11.419  INFO 11868 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-12-19 11:57:11.420  INFO 11868 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-12-19 11:57:11.449  INFO 11868 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-12-19 11:57:29.715 DEBUG 11868 --- [http-nio-9001-exec-3] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 11:57:29.717 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cloths]
+2020-12-19 11:57:29.773 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego1_1_] : [INTEGER]) - [1030]
+2020-12-19 11:57:29.774 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript2_1_] : [VARCHAR]) - [Cloths]
+2020-12-19 11:57:29.775 DEBUG 11868 --- [http-nio-9001-exec-3] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:57:29.776 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 33 size]
+2020-12-19 11:57:29.778 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [60]
+2020-12-19 11:57:29.779 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([availabl2_2_] : [INTEGER]) - [100]
+2020-12-19 11:57:29.779 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idcatego5_2_] : [INTEGER]) - [1030]
+2020-12-19 11:57:29.780 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([descript3_2_] : [VARCHAR]) - [T-Shirt 33 size]
+2020-12-19 11:57:29.780 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price4_2_] : [NUMERIC]) - [11.99]
+2020-12-19 11:57:29.782 DEBUG 11868 --- [http-nio-9001-exec-3] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:57:29.783 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [T-Shirt 33 size]
+2020-12-19 11:57:29.785 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([idproduc1_2_] : [BIGINT]) - [60]
+2020-12-19 11:57:29.789 DEBUG 11868 --- [http-nio-9001-exec-3] org.hibernate.SQL                        : update tbl_products set availablequantity=?, idcategory=?, description=?, price=? where idproduct=?
+2020-12-19 11:57:29.790 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [99]
+2020-12-19 11:57:29.790 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1030]
+2020-12-19 11:57:29.791 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [T-Shirt 33 size]
+2020-12-19 11:57:29.791 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [NUMERIC] - [11.99]
+2020-12-19 11:57:29.792 TRACE 11868 --- [http-nio-9001-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [60]
+2020-12-19 11:58:28.636 DEBUG 11868 --- [http-nio-9001-exec-4] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 11:58:28.638 TRACE 11868 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Furniture]
+2020-12-19 11:58:28.642 DEBUG 11868 --- [http-nio-9001-exec-4] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:58:28.643 TRACE 11868 --- [http-nio-9001-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bed Frame 8x8 large size]
+2020-12-19 11:58:28.645 ERROR 11868 --- [http-nio-9001-exec-4] c.e.shopping.app.service.ProductService  : Product-Service: Cannot invoke "com.ecommerce.shopping.app.model.Product.getAvailablequantity()" because the return value of "com.ecommerce.shopping.app.repository.ProductRepository.findByDescription(String)" is null
+2020-12-19 11:59:19.588  INFO 11868 --- [http-nio-9001-exec-5] c.e.shopping.app.service.ProductService  : Product-Service: Adding new product Bed Frame 8x8 large size
+2020-12-19 11:59:19.589 DEBUG 11868 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : select category0_.idcategory as idcatego1_1_, category0_.description as descript2_1_ from tbl_category category0_ where category0_.description=?
+2020-12-19 11:59:19.591 TRACE 11868 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Furniture]
+2020-12-19 11:59:19.593  INFO 11868 --- [http-nio-9001-exec-5] c.e.shopping.app.service.ProductService  : Product-Service: Product Category Furniture does not exist. Adding product category to database !
+2020-12-19 11:59:19.605 DEBUG 11868 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : insert into tbl_category (description) values (?)
+2020-12-19 11:59:19.606 TRACE 11868 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Furniture]
+2020-12-19 11:59:19.880  INFO 11868 --- [http-nio-9001-exec-5] c.e.shopping.app.service.ProductService  : Product-Service: Product Category Furniture added to database with category ID as !1031
+2020-12-19 11:59:19.882 DEBUG 11868 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : select product0_.idproduct as idproduc1_2_, product0_.availablequantity as availabl2_2_, product0_.idcategory as idcatego5_2_, product0_.description as descript3_2_, product0_.price as price4_2_ from tbl_products product0_ where product0_.description=?
+2020-12-19 11:59:19.883 TRACE 11868 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Bed Frame 8x8 large size]
+2020-12-19 11:59:19.894 DEBUG 11868 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2020-12-19 11:59:19.992 DEBUG 11868 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2020-12-19 11:59:20.376 DEBUG 11868 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : insert into tbl_products (availablequantity, idcategory, description, price, idproduct) values (?, ?, ?, ?, ?)
+2020-12-19 11:59:20.377 TRACE 11868 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+2020-12-19 11:59:20.378 TRACE 11868 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1031]
+2020-12-19 11:59:20.378 TRACE 11868 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Bed Frame 8x8 large size]
+2020-12-19 11:59:20.379 TRACE 11868 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [NUMERIC] - [171.99]
+2020-12-19 11:59:20.379 TRACE 11868 --- [http-nio-9001-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [62]
+2020-12-19 11:59:20.490  INFO 11868 --- [http-nio-9001-exec-5] c.e.shopping.app.service.ProductService  : Product-Service: Added new product Bed Frame 8x8 large size to database with product ID :62
+2020-12-19 12:00:01.085  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-19 12:00:01.086  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PRODUCT-SERVICE with eureka with status DOWN
+2020-12-19 12:00:01.086  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1608359401086, current=DOWN, previous=UP]
+2020-12-19 12:00:01.086  INFO 11868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001: registering service...
+2020-12-19 12:00:01.093  INFO 11868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - registration status: 204
+2020-12-19 12:00:01.123  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-19 12:00:01.128  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-19 12:00:01.132  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-19 12:00:01.141  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-19 12:00:01.145  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-12-19 12:00:04.176  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-12-19 12:00:04.182  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/vikram.lan:product-service:9001 - deregister  status: 200
+2020-12-19 12:00:04.302  INFO 11868 --- [RMI TCP Connection(8)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

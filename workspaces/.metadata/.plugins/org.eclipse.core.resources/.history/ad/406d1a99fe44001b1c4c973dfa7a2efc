@@ -1,0 +1,93 @@
+package com.ecommerce.shopping.app.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+
+import com.ecommerce.shopping.app.model.CustomerLogins;
+import com.ecommerce.shopping.app.model.Customers;
+import com.ecommerce.shopping.app.model.Status;
+import com.ecommerce.shopping.app.model.Users;
+import com.ecommerce.shopping.app.service.CustomerService;
+
+import java.security.Principal;
+import java.util.*;
+
+@Controller
+public class AppController {
+
+	@Autowired
+	CustomerService custSrvice;
+	
+	 @GetMapping("/login")
+	    public Map<String, Object> user(@AuthenticationPrincipal Principal principal) {
+	        return Collections.singletonMap("name", principal.getName());
+	    }
+	@GetMapping("")
+	public String viewHomePage() {
+		return "home";
+		
+	}
+	
+	@GetMapping("/list_users")
+	public String ViewUsersList() {
+		return "user";
+	}
+	
+	@GetMapping("/users")
+	public String listUsers(Model model) {
+	    List<Customers> listUsers = custSrvice.getAllCustomer();
+	    model.addAttribute("listUsers", listUsers);
+	     
+	    return "users";
+	}
+	
+	@GetMapping("/register")
+	public String ShowSignUpForm(Model model) {
+		model.addAttribute("user", new Users());
+		
+		return "signup_form";
+	}
+	
+	@PostMapping("/process_register")
+	public String Completeregistration(Users user) {
+		
+		
+		
+//		System.out.println(user.toString());
+//		Customers customer= new Customers();
+//		customer.setCustomeremailid(user.getCustomeremailid());
+//		customer.setFirstname(user.getFirstname());
+//		customer.setLastname(user.getLastname());
+//		customer.setDateofbirth(user.getDateofbirth());
+//		customer.setContactnumber(user.getContactnumber());
+//		customer.setAddressLine1(user.getAddressLine1());
+//		customer.setAddressLine2(user.getAddressLine2());
+//		customer.setZipcode(user.getZipcode());
+//		customer.setState(user.getState());
+//		customer.setCity(user.getCity());
+//		customer.setSecretquestion(user.getSecretquestion());
+//		customer.setSecretquestionanswer(user.getSecretquestionanswer());
+//		customer.setStatus(Status.ACTIVE);
+		
+		customer=custSrvice.AddNewCustomer(customer);
+		BCryptPasswordEncoder encoder=new  BCryptPasswordEncoder();		
+		CustomerLogins custlogin=new CustomerLogins();
+		custlogin.setCustomer(customer);
+		custlogin.setCustomerusername(user.getCustomerusername());
+		custlogin.setPassword(encoder.encode(user.getPassword()));
+		
+		custlogin=custSrvice.SaveCustomerLogins(custlogin);
+		System.out.println(custlogin.toString());
+		System.out.println(customer.getCustomerid());
+		return "registered";
+	}
+	
+	
+}

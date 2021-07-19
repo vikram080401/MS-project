@@ -1,0 +1,57 @@
+package com.ecommerce.shopping.app.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.ecommerce.shopping.app.model.Customers;
+import com.ecommerce.shopping.app.model.Status;
+import com.ecommerce.shopping.app.model.Users;
+import com.ecommerce.shopping.app.service.CustomerService;
+
+@Controller
+public class AppController {
+
+	@Autowired
+	CustomerService custSrvice;
+	
+	@GetMapping("")
+	public String viewHomePage() {
+		return "home";
+		
+	}
+	@GetMapping("/register")
+	public String ShowSignUpForm(Model model) {
+		model.addAttribute("user", new Users());
+		
+		return "signup_form";
+	}
+	
+	@PostMapping("/process_register")
+	public String Completeregistration(Users user) {
+		
+		
+		Customers customer= new Customers();
+		customer.setFirstname(user.getFirstname());
+		customer.setLastname(user.getLastname());
+		customer.setDateofbirth(user.getDateofbirth());
+		customer.setContactnumber(user.getContactnumber());
+		customer.setAddressLine1(user.getAddressLine1());
+		customer.setAddressLine2(user.getAddressLine2());
+		customer.setZipcode(user.getZipcode());
+		customer.setState(user.getState());
+		customer.setCity(user.getCity());
+		customer.setSecretquestion(user.getSecretquestion());
+		customer.setSecretquestionanswer(user.getSecretquestionanswer());
+		customer.setStatus(Status.ACTIVE);
+		
+		customer=custSrvice.AddNewCustomer(customer);
+		
+		System.out.println(customer.getCustomerid());
+		return "registered";
+	}
+	
+	
+}

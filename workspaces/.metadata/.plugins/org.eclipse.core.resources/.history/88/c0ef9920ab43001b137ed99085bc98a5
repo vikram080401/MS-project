@@ -1,0 +1,6 @@
+package com.ecommerce.shopping.oauth2.model;
+
+
+public class User {
+
+}

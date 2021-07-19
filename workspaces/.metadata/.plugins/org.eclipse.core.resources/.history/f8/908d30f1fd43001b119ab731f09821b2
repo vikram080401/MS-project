@@ -1,0 +1,28 @@
+package com.ecommerce.shopping.app.security;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
+import org.springframework.stereotype.Component;
+
+@Component
+public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
+
+	@Override
+	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
+			Authentication authentication) throws IOException, ServletException {
+		
+		CustomerOAuthUser oAuthUser= (CustomerOAuthUser) authentication.getPrincipal();
+		String email=oAuthUser.getEmail();
+		String name=oAuthUser.getName();
+		System.out.println("Customer's email : "+email +" customer name:  "+name );
+		super.onAuthenticationSuccess(request, response, authentication);
+	}
+
+	
+}

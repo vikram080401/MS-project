@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Shopping Portal</title>
+<link rel="stylesheet" type="text/css"
+	href="/webjars/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container text-center">
+		<div>
+			<form th:action="@{/logout}" method="post">
+				<p>
+					Welcome <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+				</p>
+				<input type="submit" value="Sign Out" />
+			</form>
+		</div>
+		<div>
+			<h1>List of Users</h1>
+		</div>
+		<div>
+			<table class="table table-striped table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th>Customer ID</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email ID</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="user: ${listUsers}">
+						<td th:text="${user.customerid}">Customer ID</td>
+						<td th:text="${user.firstname}">First Name</td>
+						<td th:text="${user.lastname}">Last Name</td>
+						<td th:text="${user.customeremailid}">Email ID</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+	
+	<div class="container authenticated" style="display: none">
+		Logged in as: <span id="user"></span>
+		<div align="right">
+			<button onClick="logout()" class="btn btn-primary">Logout</button>
+		</div>
+	</div>
+
+</body>
+</html>

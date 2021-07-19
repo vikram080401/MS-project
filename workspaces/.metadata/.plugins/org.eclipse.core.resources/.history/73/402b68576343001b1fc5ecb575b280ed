@@ -1,0 +1,5 @@
+package com.ecommerce.shopping.oauth2.configuration;
+
+public class ClientOAuth2Config {
+
+}

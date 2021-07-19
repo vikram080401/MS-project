@@ -1,0 +1,6 @@
+spring.application.name=zuul-api-gateway  
+server.port=8765
+zuul.routes.customer.url=http://localhost:8001
+zuul.routes.product.url=http://localhost:9001
+zuul.routes.order.url=http://localhost:8002
+eureka.client.service-url.default-zone=http://localhost:8761/eureka

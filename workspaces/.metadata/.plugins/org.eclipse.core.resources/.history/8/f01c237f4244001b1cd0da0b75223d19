@@ -1,0 +1,30 @@
+package com.ecommerce.shopping.app.webconfig;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.ecommerce.shopping.app.dao.CustomerLoginsRepository;
+import com.ecommerce.shopping.app.dao.UserRepository;
+import com.ecommerce.shopping.app.model.CustomerLogins;
+import com.ecommerce.shopping.app.model.Users;
+
+public class CustomUserDetailService implements UserDetailsService {
+
+	@Autowired
+	private UserRepository repo;
+	
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		Users user=repo.findBycustomeremailid(username);
+		System.out.println(user);
+		
+		if(user==null) {
+			throw new UsernameNotFoundException("User not found");
+		}
+		// TODO Auto-generated method stub
+		return new CustomUserDetails(user);
+	}
+
+}

@@ -1,0 +1,18 @@
+server:
+  port: 8002
+  h2:
+    console:
+      enabled: true
+  application:
+    name: order-service
+    
+spring:  application:    name: CUSTOMER-SERVICE    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: '*'
+    

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Shopping Portal</title>
+<link rel="stylesheet" type="text/css"
+	href="/webjars/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container text-center">
+		<div>
+			<form th:action="@{/logout}" method="post">
+				<p>
+					Welcome <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+				</p>
+				<input type="submit" value="Sign Out" />
+			</form>
+		</div>
+		<div class="container unauthenticated">
+			<div>
+				<h3>
+					<a th:href="@{/list_users}">List All users</a>
+				</h3>
+				<h3>
+					<a th:href="@{/register}">Register</a>
+				</h3>
+				<h3>
+					<a th:href="@{/login}">login</a>
+				</h3>
+			</div>
+
+			<div>
+				Login With Google: <a href="/oauth2/authorization/google">click
+					here</a>
+			</div>
+			<div>
+				Login With facebook: <a href="/oauth2/authorization/facebook">click
+					here</a>
+			</div>
+		</div>
+		<div>
+			<h1>List of Users</h1>
+		</div>
+		<div></div>
+
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>HOME-GOOD's Shopping Portal</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	
+</head>
+<body>
+	<div class="container text-center">
+		<div>
+			<h1>List all users!</h1>
+		</div>
+		<div>
+			
+		</div>
+		
+	</div>
+</body>
+</html>

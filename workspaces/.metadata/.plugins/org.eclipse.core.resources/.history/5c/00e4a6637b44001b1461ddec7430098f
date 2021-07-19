@@ -1,0 +1,85 @@
+package com.ecommerce.shopping.app.security;
+
+import java.io.IOException;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.web.DefaultRedirectStrategy;
+import org.springframework.security.web.RedirectStrategy;
+import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
+import org.springframework.stereotype.Component;
+
+import com.ecommerce.shopping.app.model.Customers;
+import com.ecommerce.shopping.app.service.CustomerService;
+
+@Component
+public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
+
+	@Autowired
+	CustomerService custService;
+	
+	private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
+	
+	@Override
+	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
+			Authentication authentication) throws IOException, ServletException {
+		
+		
+        
+		CustomerOAuthUser oAuthUser= (CustomerOAuthUser) authentication.getPrincipal();
+		String email=oAuthUser.getEmail();
+		String name=oAuthUser.getName();
+		
+		Customers EmailExist= custService.getOneCustomerbyEmailID(email);
+		if (EmailExist==null) {
+			System.out.println("New User Please register");
+			redirectStrategy.sendRedirect(request, response, "/register");
+	        clearAuthenticationAttributes(request);
+			
+		} 
+		else { System.out.println("You ar a existing user");
+		boolean hasUserRole = false;
+		boolean hasAdminRole = false;
+		Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+		for (GrantedAuthority grantedAuthority : authorities) {
+			if (grantedAuthority.getAuthority().equals("ROLE_USER")) {
+				hasUserRole = true;
+				break;
+			} else if (grantedAuthority.getAuthority().equals("ROLE_ADMIN")) {
+				hasAdminRole = true;
+				break;
+			}
+		}
+
+		if (hasUserRole) {
+			redirectStrategy.sendRedirect(request, response, "/users");
+		} else if (hasAdminRole) {
+			redirectStrategy.sendRedirect(request, response, "/users");
+		} else {
+			throw new IllegalStateException();
+		}
+		
+		}
+		
+		System.out.println("Customer's email : "+email +" customer name:  "+name + "Email from DB : "+ EmailExist.getCustomeremailid());
+		super.onAuthenticationSuccess(request, response, authentication);
+	}
+	
+	
+	    
+
+	  
+	
+
+	
+	 
+	
+}

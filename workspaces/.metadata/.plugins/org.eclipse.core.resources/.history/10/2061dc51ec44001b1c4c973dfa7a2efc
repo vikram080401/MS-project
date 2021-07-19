@@ -1,0 +1,140 @@
+package com.goods.spring.mvc.app.service;
+
+
+import java.util.Collections;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestTemplate;
+
+import com.goods.spring.mvc.app.dao.CustomerLoginsRepository;
+import com.goods.spring.mvc.app.model.CustomerLogins;
+import com.goods.spring.mvc.app.model.Customers;
+import com.netflix.appinfo.InstanceInfo;
+import com.netflix.discovery.EurekaClient;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
+
+
+@Service
+@EnableHystrix
+@EnableHystrixDashboard
+@EnableCircuitBreaker
+@EnableDiscoveryClient
+public class CustomerService implements ICustomerService {
+	
+	@Autowired
+	EurekaClient eurekaClient;
+
+	@Autowired
+	RestTemplateBuilder restTemplateBuilder;
+
+	public String Customer_Service;
+	
+	@Value("${microservice.customer-service.endpoints.endpoint.uri}")
+	private String CUSTOMER_SERVICE_URL;
+
+	@Value("${microservice.customer-service.endpoints.add.uri}")
+	private String ADD_CUSTOMER_OPERATION;
+	
+	@Value("${microservice.customer-service.endpoints.view.uri}")
+	private String VIEW_CUSTOMER_OPERATION;
+
+	public String callShip_Fallback(Customers customer) {
+
+		return "Service Unavailable!!";
+
+	}
+	
+	
+	Logger logger = LoggerFactory.getLogger(CustomerService.class);
+	@Autowired
+	com.goods.spring.mvc.app.dao.CustomerRepository customerRespository;
+
+	
+	@Autowired
+	CustomerLoginsRepository loginRepository;
+	
+	public CustomerLogins SaveCustomerLogins(CustomerLogins custlogin) {
+		return loginRepository.save(custlogin);
+	}
+	
+	//@HystrixCommand(groupKey = "myDash", commandKey = "customer Service", fallbackMethod = "callShip_Fallback")
+	public List<Customers> getAllCustomer(){
+		List<Customers> allCustomerList =Collections.emptyList();
+		try {		
+			 allCustomerList= (List<Customers>) customerRespository.findAll();
+			 logger.info("Customer-Service: Returned all customers from database");
+		} catch (Exception e) {
+			
+			logger.error("Customer-Service: "+e.getMessage());
+		}
+		return allCustomerList;
+	}
+	public Customers getOneCustomersbyID(long customerid) {
+		Customers customer=new Customers();
+		try {
+			customer=customerRespository.findById(customerid).orElse(null);
+			logger.info("Customer-Service: Returned customer from database");
+		} catch (Exception e) {
+			logger.error("Customer-Service: "+e.getMessage());
+		}
+		
+		return  customer;
+	}
+
+	public Customers getOneCustomerbyEmailID(String emailid) {
+		Customers customer=new Customers();
+		try {
+			customer=customerRespository.findByCustomeremailid(emailid);
+		} catch (Exception e) {
+			logger.error("Customer-Service: "+e.getMessage());
+		}
+		
+		return customer;
+	}
+
+	@HystrixCommand(groupKey = "myDash", commandKey = "customer Service", fallbackMethod = "callShip_Fallback")
+	public Customers AddNewCustomer(Customers customer) {
+		try {
+			HttpHeaders headers = new HttpHeaders();
+			headers.setContentType(MediaType.APPLICATION_JSON);
+			
+			String uri = GetInstanceInfofromEureka() + ADD_CUSTOMER_OPERATION;
+			
+			HttpEntity<Customers> httpEntity = new HttpEntity<>(customer, headers);
+			RestTemplate restTemplate = new RestTemplate();
+			String str=restTemplate.postForObject(uri, httpEntity, String.class, customer);
+			logger.info(Customer_Service+" :"+str);
+		} catch (RestClientException e) {
+			logger.info(Customer_Service+" : "+ e.getMessage());
+		}
+		
+		return customerRespository.save(customer);
+	}
+	
+	private String GetInstanceInfofromEureka() {
+		InstanceInfo nextServerFromEureka = eurekaClient.getNextServerFromEureka(CUSTOMER_SERVICE_URL, false);
+		String baseUrl;
+		try {
+			baseUrl = nextServerFromEureka.getHomePageUrl();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return baseUrl;
+		
+	}
+}

@@ -1,0 +1,34 @@
+logging:
+  file:
+    path: Customerlog
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql: trace
+server:
+  port: 8003
+spring:
+  application:
+    name: GOODS-WEB-APP
+  datasource:
+    password: s$cret
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/user_db
+    username: direct
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: '*'
